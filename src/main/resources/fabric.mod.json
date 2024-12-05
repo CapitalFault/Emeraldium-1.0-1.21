@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "emeraldium",
+	"version": "${version}",
+	"name": "Emeraldium",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"CapitalFault"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/emeraldium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.capitalfault.emeraldium.Emeraldium"
+		],
+		"fabric-datagen": [
+			"de.capitalfault.emeraldium.EmeraldiumDataGenerator"
+		],
+		"client": [
+			"de.capitalfault.emeraldium.EmeraldiumClient"
+		]
+	},
+	"mixins": [
+		"emeraldium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
