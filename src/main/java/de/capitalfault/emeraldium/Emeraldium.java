@@ -1,5 +1,6 @@
 package de.capitalfault.emeraldium;
 
+import de.capitalfault.emeraldium.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class Emeraldium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		//very important comment
+		ModItems.registerModItems();
 	}
 }
