@@ -11,6 +11,6 @@ public class Emeraldium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		//very important comment
 	}
 }
