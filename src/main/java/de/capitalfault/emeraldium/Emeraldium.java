@@ -1,5 +1,6 @@
 package de.capitalfault.emeraldium;
 
+import de.capitalfault.emeraldium.block.ModBlocks;
 import de.capitalfault.emeraldium.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class Emeraldium implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBocks();
 	}
 }
