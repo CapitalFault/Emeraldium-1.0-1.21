@@ -12,13 +12,25 @@ public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
 
-    public static final Item EMERALD_SWORD = registerItem("emerald_sword",
+   public static final Item EMERALD_SWORD = registerItem("emerald_sword",
             new SwordItem(ModToolMaterials.EMERALD, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.EMERALD, 3, -2.4f))));
 
     public static final Item EMERALD_AXE = registerItem("emerald_axe",
             new AxeItem(ModToolMaterials.EMERALD, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.EMERALD, 5, -3.0f))));
+
+    public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel",
+            new ShovelItem(ModToolMaterials.EMERALD, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.EMERALD, 1.5f, -3.0f))));
+
+    public static final Item EMERALD_HOE = registerItem("emerald_hoe",
+            new HoeItem(ModToolMaterials.EMERALD, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.EMERALD, -3, 0))));
+
+    public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe",
+            new PickaxeItem(ModToolMaterials.EMERALD, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.EMERALD, 1, -2.8f))));
 
 
 
@@ -39,6 +51,9 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(EMERALD_SWORD);
             entries.add(EMERALD_AXE);
+            entries.add(EMERALD_SHOVEL);
+            entries.add(EMERALD_HOE);
+            entries.add(EMERALD_PICKAXE);
         });
     }
 }
