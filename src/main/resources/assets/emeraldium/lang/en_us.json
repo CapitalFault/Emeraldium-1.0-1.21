@@ -11,6 +11,9 @@
   "block.emeraldium.pink_garnet_block": "Block of Pink Garnet",
   "block.emeraldium.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
+  "block.emeraldium.pink_garnet_ore": "Pink Garnet Ore",
+  "block.emeraldium.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+
   "itemgroup.emeraldium.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.emeraldium.pink_garnet_blocks": "Pink Garnet Blocks",
   "itemgroup.emeraldium.emeraldium": "Emeraldium"
