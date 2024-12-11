@@ -1,6 +1,7 @@
 package de.capitalfault.emeraldium.block;
 
 import de.capitalfault.emeraldium.Emeraldium;
+import de.capitalfault.emeraldium.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -33,6 +34,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 5),
                     AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

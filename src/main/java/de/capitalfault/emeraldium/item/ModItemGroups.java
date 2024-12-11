@@ -36,6 +36,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_ORE);
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+
                     }).build());
 
     public static final ItemGroup EMERALDIUM_GROUP = Registry.register(Registries.ITEM_GROUP,
