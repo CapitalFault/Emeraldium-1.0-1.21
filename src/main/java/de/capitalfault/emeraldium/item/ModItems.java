@@ -48,18 +48,5 @@ public class ModItems {
 
     public static void registerModItems() {
         Emeraldium.LOGGER.info("Registering Mod Items for" + Emeraldium.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(PINK_GARNET);
-            entries.add(RAW_PINK_GARNET);
-        });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
-            entries.add(EMERALD_SWORD);
-            entries.add(EMERALD_AXE);
-            entries.add(EMERALD_SHOVEL);
-            entries.add(EMERALD_HOE);
-            entries.add(EMERALD_PICKAXE);
-        });
     }
 }
