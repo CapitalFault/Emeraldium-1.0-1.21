@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    EMERALD(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL, 1200, 7.0F, 3.0F, 18, () -> Ingredient.ofItems(Items.EMERALD));
+    EMERALD(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL, 1200, 7.0F, 3.0F, 50, () -> Ingredient.ofItems(Items.EMERALD));
 
 
     private final TagKey<Block> inverseTag;
