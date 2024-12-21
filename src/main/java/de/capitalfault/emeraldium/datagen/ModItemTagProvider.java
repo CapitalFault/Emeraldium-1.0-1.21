@@ -4,7 +4,6 @@ import de.capitalfault.emeraldium.item.ModItems;
 import de.capitalfault.emeraldium.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -36,5 +35,23 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.EMERALD_HOE);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.EMERALD_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.EMERALD_HELMET)
+                .add(ModItems.EMERALD_CHESTPLATE)
+                .add(ModItems.EMERALD_LEGGINGS)
+                .add(ModItems.EMERALD_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.EMERALD_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.EMERALD_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.EMERALD_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.EMERALD_BOOTS);
     }
 }
